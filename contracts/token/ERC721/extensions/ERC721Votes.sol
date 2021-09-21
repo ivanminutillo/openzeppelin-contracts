@@ -2,7 +2,7 @@
 
 pragma solidity ^0.8.0;
 
-import "./draft-ERC721Permit.sol";
+import "./NFTPermit.sol";
 import "../../../utils/math/Math.sol";
 import "../../../utils/math/SafeCast.sol";
 import "../../../utils/cryptography/ECDSA.sol";
@@ -24,7 +24,7 @@ import "../../../utils/cryptography/ECDSA.sol";
  *
  * _Available since v4.2._
  */
-abstract contract ERC721Votes is ERC721Permit {
+abstract contract ERC721Votes is NFTPermit {
     struct Checkpoint {
         uint32 fromBlock;
         uint224 votes;
